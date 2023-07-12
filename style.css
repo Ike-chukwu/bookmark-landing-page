@@ -1,0 +1,1145 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+button{
+    border-radius: .5rem;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    color:  hsl(229, 31%, 21%);
+}
+
+p{
+    /* font-weight: 100; */
+    color: hsl(229, 8%, 60%);
+}
+/* ----nav-- */
+nav{
+    padding-block: 4rem;
+    padding-left: 12%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    padding-block: 4rem;
+    padding-left: 12%;
+    padding-right: 7%;
+}
+
+section{
+    padding-block: 4rem;
+    padding-left: 12%;
+    padding-right: 10%;
+    margin-block: 10rem;
+}
+
+nav .fa-times{
+    font-size: 2rem;
+    display: none;
+}
+
+nav .logo-2{
+    display: none;
+}
+
+nav a{
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: hsl(229, 8%, 60%);
+    font-weight: 600;
+}
+nav .login-btn{
+    padding: 1rem 3rem;
+    background: hsl(0, 94%, 66%);
+    color: white;
+    border-radius: .5rem;
+    margin-left: 3rem;
+    text-transform: uppercase;
+    border: none;
+    transition: none; 
+    cursor: pointer;  
+}
+
+nav .login-btn:hover{
+    background: none;
+    border: .2rem solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
+
+nav a:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+nav .socials{
+    display: none;
+}
+
+nav .fa-bars{
+    display: none;
+    font-size: 2rem;
+}
+
+
+/* -----header--- */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .left-side{
+    align-self: flex-end;
+}
+
+header .left-side h1{
+    font-size: 5rem;
+    width: 70%;
+    color:  hsl(229, 31%, 21%);
+}
+
+header .left-side p{
+    font-size: 1.6rem;
+    width: 45%;
+    line-height: 1.5;
+    margin-block: 3rem;
+    
+}
+
+button{
+    padding:1rem 2.5rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+header button{
+    padding:1.5rem 2.5rem;
+    cursor: pointer;
+}
+
+header button:nth-child(2){
+    margin-left: 1rem;
+}
+
+header button:nth-child(2):hover{
+    background: none;
+    color: hsl(229, 31%, 21%);
+    border: .2rem solid  hsl(229, 31%, 21%);
+}
+
+.chrome{
+    background: hsl(231, 69%, 60%);
+    color: white;
+}
+
+header .chrome:hover{
+   color: hsl(231, 69%, 60%);
+   background: none;
+   border: .2rem solid  hsl(231, 69%, 60%);
+}
+
+header .right-side{
+    position: relative;
+}
+
+header .right-side::after{
+    content: '';
+    position: absolute;
+    width: 65rem;
+    height: 30rem;
+    right: -20%;
+    bottom: 0;
+    top: 50%;
+    background: hsl(231, 69%, 60%);
+    z-index: -1;
+    border-top-left-radius: 30rem;
+    border-bottom-left-radius: 30rem;
+}
+
+header .right-side img{
+   width: 70rem;
+   height: 40rem;
+   border: 2rem solid black;
+   border-radius: 3rem;
+}
+
+
+/* ---features--- */
+.features{
+    text-align: center;
+}
+
+.features h2{
+    font-size: 3rem;
+}
+
+.features .f-text{
+    margin-block: 2rem;
+    font-size: 1.6rem;
+    margin-inline: auto;
+    width: 28%;
+    line-height: 1.5;
+}
+
+.features .features-list .fList{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    position: relative;
+}
+
+.features .features-list .fList h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-block: 2rem;
+    position: relative;
+    cursor: pointer;
+    color: hsl(229, 8%, 60%);
+}
+
+.features .features-list .fList h3:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+.horizontals{
+    position: relative;
+}
+
+.features .features-list .horizontals .below{
+    position: relative;
+    width: 50%;
+    margin-inline: auto;
+    height: 3px;
+    border: none;
+    background-color: lightgrey;
+}
+
+.features .features-list .indicator{
+    position: absolute;
+    background-color: hsl(0, 94%, 66%);
+    height: 3px;
+    border: none;
+    width: 18%;
+    z-index: 10;
+    left: 25%;
+}
+
+.features .f-illustration{
+    margin-top: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: red; */
+}
+
+.features .f-illustration .box{
+    position: relative;
+}
+
+.features .f-illustration .box img{
+   width: 70rem;
+   height: 50rem;
+}
+
+.features .f-illustration .box::after{
+    position: absolute;
+    content: '';
+    width: 100rem;
+    height: 35rem;
+    left: -55%;
+    bottom: 0;
+    top: 50%;
+    background: hsl(231, 69%, 60%);
+    z-index: -1;
+    border-top-right-radius: 30rem;
+    border-bottom-right-radius: 30rem;
+}
+
+.features .f-illustration .content{
+  width: 40%;
+  text-align: left;
+  position: relative;
+}
+
+.features .f-illustration .content p{
+    font-size: 1.6rem;
+    margin: 3rem 0;
+    text-align: left;
+    width: 65%;
+    line-height: 1.5;
+}
+
+.features .f-illustration .content button{
+    background: hsl(231, 69%, 60%);
+    color: white;
+    border: none;
+}
+
+.features .new-line{
+    display: none;
+}
+
+/* ----download section--- */
+.download h2,
+.download .f-text{
+    text-align: center;
+}
+
+.download h2{
+    font-size: 3rem;
+}
+
+.download  .f-text{
+    margin-block: 2rem;
+    font-size: 1.6rem;
+    margin-inline: auto;
+    width: 30%;
+    line-height: 1.5;
+}
+
+.download  .box-container{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: relative;
+}
+
+.download  .box-container .box{
+    text-align: center;
+    border-radius: 1rem;
+    width: 30rem;
+    padding-block: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.download  .box-container .box:nth-child(2){
+    margin-top: 65px;
+}
+
+.download  .box-container .box:nth-child(3){
+    margin-top: 130px;
+}
+
+.download  .box-container .box .logoI{
+    margin-top: 2rem;
+}
+
+
+.download  .box-container .box h3{
+    padding-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size:2rem
+}
+
+.download  .box-container .box p{
+    font-size:1.6rem;
+    padding-bottom: 3.5rem;
+}
+
+.download  .box-container .box .dots{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.download  .box-container .box .install-btn{
+    width: 90%;
+    border: none;
+    background: hsl(231, 69%, 60%);
+    color: white;
+    cursor: pointer;
+}
+
+.download  .box-container .box .install-btn:hover{
+    background: none;
+    border: .1rem hsl(231, 69%, 60%) solid;
+    color: hsl(231, 69%, 60%);
+}
+
+
+
+/* ---faqs-- */
+
+.faqs h2,
+.faqs .f-text{
+    text-align: center;
+}
+
+.faqs h2{
+    font-size: 3rem;
+}
+
+.faqs .f-text{
+    margin-block: 2rem;
+    font-size: 1.6rem;
+    margin-inline: auto;
+    width: 30%;
+    line-height: 1.5;
+}
+
+.faqs .q-bank{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.faqs .q-bank .questions{
+    width: 45rem;
+    height: 5rem;
+    overflow: hidden;
+    border-top: .1rem solid grey;
+    padding-block: .5rem;
+}
+
+.faqs .q-bank .questions.active{
+    height: max-content;
+    overflow: visible;
+}
+
+
+.faqs .q-bank .questions:nth-child(4){
+    border-bottom: .1rem solid grey;
+}
+
+.faqs .q-bank .questions .question{
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color:  hsl(229, 31%, 21%);
+    font-weight: 500;
+}
+
+.faqs .q-bank .questions .question:hover{
+    color: hsl(0, 94%, 66%);
+    cursor: pointer;
+}
+
+.faqs .q-bank .questions .answer{
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.faqs .q-bank .questions div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqs .q-bank .questions div i{
+    margin-top: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.faqs .q-bank .questions div i.rotate{
+    transform: rotate(180deg);
+    color: hsl(0, 94%, 66%);
+}
+
+
+.faqs .btn{
+   display: flex;
+   justify-content: center;
+   margin-top: 7rem;
+}
+
+.faqs .btn button{
+    background: hsl(231, 69%, 60%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* ----newsletter--- */
+.newsletter{
+    background: hsl(231, 69%, 60%);
+    color: white;
+    overflow-x: hidden;
+    margin-bottom: 0;
+}
+
+.newsletter h2,
+.newsletter p{
+    text-align: center;
+}
+
+.newsletter .f-text{
+    margin-block: 3rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    color: white;
+
+}
+
+.newsletter h2{
+    font-size: 3rem;
+    width: 25%;
+    margin-inline: auto;
+    margin-bottom: 3rem;
+}
+
+.newsletter .entry{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newsletter .iEntry{
+    background: white;
+    padding-top: .2rem;
+    padding-inline: .2rem;
+    width: 30rem;
+    height:3.5rem;
+    overflow: hidden;
+    border-radius: .3rem;
+    transition: all .5s ease-in-out;
+}
+
+.newsletter .iEntry.active{
+    background: hsl(0, 94%, 66%);
+    height: max-content;
+}
+
+.newsletter .iEntry div{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.newsletter .iEntry div input{
+    width: 100%;
+    border: none;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    border-radius: .3rem;
+}
+
+.newsletter .iEntry div input:focus{
+    outline: none;
+}
+
+.newsletter .iEntry div img{
+   position: absolute;
+   right: 5%;
+   top: 50%;
+   transform: translateY(-50%);
+   visibility: hidden;
+}
+
+.newsletter .iEntry div img.active{
+    visibility: visible;
+}
+
+.newsletter .entry .iEntry p{
+    width: 100%;
+    font-size: 1.3rem;
+    padding-block: .5rem;
+    text-align: left;
+    padding-inline: 1rem;
+    color: white;
+}
+
+.newsletter .entry button{
+    height:3.5rem;
+    border-radius: .3rem;
+    background: hsl(0, 94%, 66%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter .entry button:hover{
+    background: white;
+    border: .13em solid hsl(0, 94%, 66%) ;
+    color: hsl(0, 94%, 66%);
+}
+
+
+
+
+/* ---footer--- */
+footer{
+    background:hsl(229, 31%, 21%);
+    color: white;
+    padding-left: 12%;
+    padding-right: 10%;
+    padding-block: 3rem;
+}
+footer .foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .foot .alt-links{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 6rem;
+}
+
+footer .foot .alt-links a{
+    color: white;
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+footer .foot .alt-links a:hover{
+    color: hsl(0, 94%, 66%);
+}
+
+footer .foot .socials{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer .foot .socials img{
+    cursor: pointer;
+}
+
+footer .foot .socials img:hover{
+    background-color: hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
+
+
+footer  .attribution{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+   
+}
+
+footer  .attribution a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1700px){
+    nav{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    
+    header{
+        padding-left: 7%;
+        padding-right: 5%;
+    }
+    
+    section{
+        padding-block: 4rem;
+        padding-left: 7%;
+        padding-right: 7%;
+        margin-block: 10rem;
+    }
+
+    header .right-side::after{
+        width: 50rem;
+        height: 30rem;
+    }
+    
+    header .right-side img{
+       width: 60rem;
+       height: 40rem;
+    }
+
+    header .left-side h1{
+        min-width: 75%;
+        
+    }
+
+
+    /* ---features-section-- */
+    .features .f-illustration{
+        justify-content: space-between;
+    }
+    
+    .features .f-illustration .box img:nth-child(1){
+       height: 40rem;
+    }
+    
+    .features .f-illustration .box img{
+       width: 60rem;
+       height: 40rem;
+    }
+    
+    .features .f-illustration .box::after{
+        position: absolute;
+        content: '';
+        width: 80rem;
+        height: 25rem;
+        left: -55%;
+        bottom: 0;
+        top: 50%;
+        background: hsl(231, 69%, 60%);
+        z-index: -1;
+        border-top-right-radius: 30rem;
+        border-bottom-right-radius: 30rem;
+    }
+    
+    .features .f-illustration .content{
+      width: 40%;
+      text-align: left;
+      position: relative;
+    }
+    
+    .features .f-illustration .content p{
+        font-size: 1.6rem;
+        margin: 3rem 0;
+        text-align: left;
+        width: 65%;
+        line-height: 1.5;
+    }
+    
+    .features .f-illustration .content button{
+        background: hsl(231, 69%, 60%);
+        color: white;
+        border: none;
+    }
+
+}
+
+
+@media (max-width:1400px){
+    nav{
+        padding-left: 5%;
+        padding-right: 4%;
+    }
+    
+    header{
+        padding-left: 5%;
+        padding-right: 1.5%;
+    }
+    
+    section{
+        padding-left: 5%;
+        padding-right: 4%;
+    }
+
+    .features .f-text{
+        margin-block: 2rem;
+        font-size: 1.6rem;
+        margin-inline: auto;
+        width: 50%;
+        line-height: 1.5;
+    }
+    
+}
+
+
+@media (max-width:1380px){
+
+    header .left-side{
+        width: 80%;
+    }
+
+    header .right-side img{
+        width: 95%;
+     }
+
+     header .left-side h1{
+        width: 90%;
+    }
+
+    .features .features-list .indicator{
+       display: none;
+    }
+
+    .features .features-list .horizontals .below{
+       display: none;
+    }
+
+    .features .features-list .fList h3:active{
+        color: hsl(0, 94%, 66%);
+    }
+
+    .features .f-illustration{
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .features .f-illustration .box img{
+       width: 50rem;
+       height: 50rem;
+    }
+    
+    .features .f-illustration .box::after{
+        width: 70rem;
+        height: 30rem;
+        top: 40%;
+    }
+    
+    .features .f-illustration .content{
+      width: 40%;
+      text-align: left;
+      position: relative;
+    }
+    
+    .features .f-illustration .content p{
+        font-size: 1.6rem;
+        margin: 3rem 0;
+        text-align: left;
+        width: 65%;
+        line-height: 1.5;
+    }
+    
+}
+
+
+
+
+
+@media (max-width:1000px){
+    nav{
+        padding: 2rem;
+        color: white;
+    }
+
+
+    .links{
+        position: fixed;
+        padding: 4rem 2.5rem;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: -100%;
+        bottom: 0;
+        background: hsl(229, 31%, 21%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+        transition: top .5s ease-in-out;
+        z-index: 30;
+    }
+
+    .links.active{
+        top: 0;
+    }
+
+    .links .logo-2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .links  .options{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .links  .options a:nth-child(1){
+        border-top: .1rem solid hsl(229, 8%, 60%);
+        padding-top: 3rem;
+    }
+    
+    .links  .options a{
+        width: 100%;
+        color: white;
+        padding-block: 3rem;
+        margin-inline:auto ;
+        text-align: center;
+        border-bottom: .1rem solid hsl(229, 8%, 60%);
+    }
+
+    .links  .options a:hover{
+        color: hsl(0, 94%, 66%);
+    }
+
+    nav .login-btn{
+       border: .3rem solid white;
+       margin-inline: auto;
+       margin-top: 3rem;
+       width: 100%;
+       background: none;
+       text-transform: uppercase;
+       padding: 1.3rem;
+    }
+
+    nav .socials{
+        display: initial;
+        position: absolute;
+        bottom: 5%;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+    
+    nav .fa-bars{
+        display: initial;
+        font-size: 2rem;
+        color: hsl(229, 31%, 21%);
+        cursor: pointer;
+    }
+    
+    nav .fa-times{
+        font-size: 2rem;
+        display: initial;
+        cursor: pointer;
+    }
+
+    nav .fa-times:hover{
+        color: hsl(0, 94%, 66%);
+    }
+    
+
+    /* --header-- */
+    header{
+        padding: 4rem 2rem;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header .right-side{
+        width: 100%;
+    }
+ 
+    header .right-side::after{
+        width: 95%;
+        height: 25rem;
+    }
+    
+    header .right-side img{
+       width: 100%;
+    }
+
+    header .left-side{
+        width: 100%;
+    }
+
+    header .left-side{
+        margin-top: 10rem;
+    }
+    
+    header .left-side h1{
+        font-size: 4rem;
+        width: 90%;
+        text-align: center;
+    }
+    
+    header .left-side p{
+        width: 70%;
+        margin-inline: auto;
+        text-align: center;
+    }
+    
+    .btn-row{
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+
+ /* ---features-- */
+
+.features .f-text{
+    width: 66%;
+}
+
+.features .features-list .fList{
+   flex-direction: column;
+   gap: 0;
+   margin-top: 5rem;
+}
+
+.features .features-list .horizontals{
+    display: none;
+}
+
+.features .features-list .fList h3{
+    margin-block: 0rem;
+    padding-block: 2rem;
+    border-bottom: .2rem solid lightgrey;
+    width: 90%;
+    position: relative;
+}
+
+.features .features-list .fList h3:nth-child(1){
+    border-top: .2rem solid lightgrey;
+}
+
+.features .features-list .fList .new-line{
+    display: unset;
+    position: absolute;
+    width: 40%;
+    left: 0%;
+    right: 0%;
+    top: 33%;
+    margin-inline: auto;
+    background-color: hsl(0, 94%, 66%);
+    height: 3px;
+    border: none;
+}
+
+
+.features .f-illustration{
+   flex-direction: column;
+}
+
+.features .f-illustration .box{
+   width: 100%;
+}
+
+.features .f-illustration .box .image{
+  width: 95%;
+}
+
+.features .f-illustration .box::after{
+    top: 30%;
+    width: 90%;
+    height: 35rem;
+    left: -10%;
+}
+
+.features .f-illustration .content{
+  width: 100%;
+  margin-top: 12rem;
+  text-align: center;
+}
+
+.features .f-illustration .content p{
+    margin-inline: auto;
+    text-align: center;
+    width: 65%;
+}
+
+
+/* ---download section-- */
+
+.download  .f-text{
+    width: 66%;
+}
+
+.download  .box-container{
+    margin-top: 5rem;
+    flex-direction: column;
+    position: relative;
+    gap: 4rem;
+}
+
+.download  .box-container .box{
+    text-align: center;
+    border-radius: 1rem;
+    width: 30rem;
+    padding-block: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.download  .box-container .box:nth-child(2),
+.download  .box-container .box:nth-child(3){
+    margin-top: 0px;
+}
+
+
+/* ---faqs-- */
+
+.faqs .f-text{
+    width: 66%;
+}
+
+.faqs .q-bank .questions{
+    width: 90%;
+}
+
+
+
+/* ----news-letter-- */
+.newsletter h2,
+.newsletter p{
+    text-align: center;
+}
+
+.newsletter .f-text{
+    margin-block: 2rem;
+}
+
+.newsletter h2{
+    width: 80%;
+    margin-bottom: 3.5rem;
+}
+
+.newsletter .entry{
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter .iEntry{
+    width: 100%;
+}
+
+.newsletter .entry button{
+   width: 100%;
+}
+
+.newsletter .entry button:hover{
+    background: white;
+    border: .13em solid hsl(0, 94%, 66%) ;
+    color: hsl(0, 94%, 66%);
+}
+
+
+/* -----footer-- */
+footer .foot{
+   flex-direction: column;
+   gap: 2rem;
+}
+footer .foot .alt-links{
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+footer .foot .alt-links a{
+  display: block;
+  margin-top: 2rem;
+  margin-inline: auto;
+}
+
+footer  .attribution{
+    margin-top: 4rem;
+}
+
+
+}
